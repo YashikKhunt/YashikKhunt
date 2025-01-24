@@ -48,8 +48,6 @@ A machine learning model developed in Python to predict housing prices with high
 
 ## Connect with Me
 
-- [LinkedIn](https://www.linkedin.com/in/yashikhunt)
-- [Twitter](https://twitter.com/yashikhunt)
-- [Website](https://yashikhunt.dev)
+- [LinkedIn](https://www.linkedin.com/in/yashik-hunt)
 
 Thanks for visiting my profile! Have a great day! 😊
