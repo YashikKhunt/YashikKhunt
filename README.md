@@ -1,16 +1,54 @@
-## Hi there 👋
+# Hi there, I'm Yashik Khunt! 👋
 
-<!--
-**YashikKhunt/YashikKhunt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
 
-Here are some ideas to get you started:
+I am a passionate software developer with a keen interest in web development, machine learning, and open-source contributions. I love to explore new technologies and apply them in real-world projects.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🌱 I’m currently learning advanced Python and machine learning techniques.
+- 🔭 I’m currently working on several exciting web development projects.
+- 👯 I’m looking to collaborate on open-source projects that have a positive impact.
+- 💬 Ask me about web development, Python, and machine learning.
+- 📫 How to reach me: [yashikhunt@example.com](mailto:yashikhunt@example.com)
+- ⚡ Fun fact: I love solving puzzles and playing chess.
+
+## Skills
+
+### Programming Languages
+- Python
+- JavaScript
+- HTML & CSS
+
+### Frameworks & Libraries
+- React
+- Node.js
+- Express
+- Django
+
+### Tools & Platforms
+- Git & GitHub
+- Docker
+- AWS
+
+### Databases
+- MySQL
+- MongoDB
+
+## Projects
+
+### [Project 1: Awesome Web App](https://github.com/YashikKhunt/awesome-web-app)
+A web application built with React and Node.js that helps users manage their tasks efficiently.
+
+### [Project 2: Machine Learning Model](https://github.com/YashikKhunt/machine-learning-model)
+A machine learning model developed in Python to predict housing prices with high accuracy.
+
+## GitHub Stats
+
+![YashikKhunt's GitHub stats](https://github-readme-stats.vercel.app/api?username=YashikKhunt&show_icons=true&theme=radical)
+
+## Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/yashikhunt)
+- [Twitter](https://twitter.com/yashikhunt)
+- [Website](https://yashikhunt.dev)
+
+Thanks for visiting my profile! Have a great day! 😊
