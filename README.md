@@ -4,11 +4,11 @@
 
 I am a passionate software developer with a keen interest in web development, machine learning, and open-source contributions. I love to explore new technologies and apply them in real-world projects.
 
-- 🌱 I’m currently learning advanced Python and machine learning techniques.
+- 🌱 I’m currently learning advanced static code analysis techniques and applications.
 - 🔭 I’m currently working on several exciting web development projects.
 - 👯 I’m looking to collaborate on open-source projects that have a positive impact.
 - 💬 Ask me about web development, Python, and machine learning.
-- 📫 How to reach me: [yashikhunt@example.com](mailto:yashikhunt@example.com)
+- 📫 How to reach me: [yashikhunt2002@gmail.com](mailto:yashikhunt2002@gmail.com)
 - ⚡ Fun fact: I love solving puzzles and playing chess.
 
 ## Skills
@@ -28,6 +28,7 @@ I am a passionate software developer with a keen interest in web development, ma
 - Git & GitHub
 - Docker
 - AWS
+- Google cloud
 
 ### Databases
 - MySQL
