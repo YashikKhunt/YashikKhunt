@@ -30,9 +30,10 @@ I am a passionate software developer with a keen interest in web development, ma
 - AWS
 - Google cloud
 
-### Databases
-- MySQL
-- MongoDB
+### AI/ML
+- Agent building
+- AI orchestration
+- Fine Tuning
 
 ## Projects
 
