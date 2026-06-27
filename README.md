@@ -35,13 +35,11 @@ I am a passionate software developer with a keen interest in web development, ma
 - AI orchestration
 - Fine Tuning
 
-## Projects
+## Currently working on
 
-### [Project 1: Awesome Web App](https://github.com/YashikKhunt/awesome-web-app)
-A web application built with React and Node.js that helps users manage their tasks efficiently.
+### [Project 1: Context Doodle](https://github.com/YashikKhunt/awesome-web-app](https://github.com/YashikKhunt/context-doodle)
+A VsCode extention to keep track whether Agent loop keeps looping or not via context tracking.
 
-### [Project 2: Machine Learning Model](https://github.com/YashikKhunt/machine-learning-model)
-A machine learning model developed in Python to predict housing prices with high accuracy.
 
 ## GitHub Stats
 
