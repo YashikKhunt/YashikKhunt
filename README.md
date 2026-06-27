@@ -37,7 +37,7 @@ I am a passionate software developer with a keen interest in web development, ma
 
 ## Currently working on
 
-### [Project 1: Context Doodle](https://github.com/YashikKhunt/awesome-web-app](https://github.com/YashikKhunt/context-doodle)
+### [Project 1: Context Doodle](https://github.com/YashikKhunt/context-doodle)
 A VsCode extention to keep track whether Agent loop keeps looping or not via context tracking.
 
 
