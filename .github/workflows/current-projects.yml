@@ -1,0 +1,66 @@
+name: Refresh currently working on
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-refresh
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Fetch top 3 by last push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USER: YashikKhunt
+        run: |
+          set -euo pipefail
+          gh api "users/$USER/repos?sort=pushed&direction=desc&per_page=100&type=owner" \
+            --jq "[.[] | select(.fork==false and .archived==false and .name!=\"$USER\")] | .[0:3]" \
+            > repos.json
+          cat repos.json | jq -r '.[].name'
+
+      - name: Render section
+        run: |
+          {
+            echo "<!-- CURRENT:START -->"
+            echo ""
+            jq -r '.[] |
+              "**[\(.name)](\(.html_url))** \(if .language then "· `\(.language)`" else "" end)  \n" +
+              "\(.description // "_No description yet_")  \n" +
+              "<sub>last push \(.pushed_at[0:10])</sub>\n"
+            ' repos.json
+            echo "<!-- CURRENT:END -->"
+          } > section.md
+
+      - name: Splice into README
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          readme  = pathlib.Path("README.md")
+          section = pathlib.Path("section.md").read_text().strip()
+          body    = readme.read_text()
+          new = re.sub(
+              r"<!-- CURRENT:START -->.*?<!-- CURRENT:END -->",
+              lambda _: section,          # lambda, NOT a plain string
+              body, flags=re.S)
+          readme.write_text(new)
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet && echo "no change" && exit 0
+          git commit -m "chore: refresh currently working on"
+          git push
