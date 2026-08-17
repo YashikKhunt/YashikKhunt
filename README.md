@@ -39,11 +39,17 @@ I am a passionate software developer with a keen interest in web development, ma
 
 <!-- CURRENT:START -->
 
-### [Context Doodle](https://github.com/YashikKhunt/context-doodle)
-A VS Code extension that tracks context to detect whether an agent loop is spinning.
+**[ewc-rulebook-rag](https://github.com/YashikKhunt/ewc-rulebook-rag)** · `Python`  
+Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybrid dense+BM25 retrieval, article-aware chunking, authority-based precedence, abstention as a success state. Built and audited via a builder/verifier/logger agent loop.  
+<sub>last push 2026-08-17</sub>
 
-### [YT-AI Shorts Factory](https://github.com/YashikKhunt/shorts-factory)
-Full-stack AI app that auto-generates YouTube Shorts end-to-end — script, audio, and FFmpeg video rendering.
+**[shorts-factory](https://github.com/YashikKhunt/shorts-factory)** · `Python`  
+_No description yet_  
+<sub>last push 2026-07-16</sub>
+
+**[context-doodle](https://github.com/YashikKhunt/context-doodle)** · `TypeScript`  
+_No description yet_  
+<sub>last push 2026-06-26</sub>
 
 <!-- CURRENT:END -->
 
