@@ -37,11 +37,15 @@ I am a passionate software developer with a keen interest in web development, ma
 
 ## Currently working on
 
-### [Project 1: Context Doodle](https://github.com/YashikKhunt/context-doodle)
-A VsCode extention to keep track whether Agent loop keeps looping or not via context tracking.
+<!-- CURRENT:START -->
 
-### [Project 2: YT-AI Shorts factory](https://github.com/YashikKhunt/shorts-factory)
+### [Context Doodle](https://github.com/YashikKhunt/context-doodle)
+A VS Code extension that tracks context to detect whether an agent loop is spinning.
+
+### [YT-AI Shorts Factory](https://github.com/YashikKhunt/shorts-factory)
 Full-stack AI app that auto-generates YouTube Shorts end-to-end — script, audio, and FFmpeg video rendering.
+
+<!-- CURRENT:END -->
 
 
 ## GitHub Stats
