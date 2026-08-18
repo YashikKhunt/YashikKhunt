@@ -41,7 +41,7 @@ I am a passionate software developer with a keen interest in web development, ma
 
 **[ewc-rulebook-rag](https://github.com/YashikKhunt/ewc-rulebook-rag)** · `Python`  
 Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybrid dense+BM25 retrieval, article-aware chunking, authority-based precedence, abstention as a success state. Built and audited via a builder/verifier/logger agent loop.  
-<sub>last push 2026-08-17</sub>
+<sub>last push 2026-08-18</sub>
 
 **[shorts-factory](https://github.com/YashikKhunt/shorts-factory)** · `Python`  
 _No description yet_  
