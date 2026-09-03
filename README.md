@@ -39,6 +39,10 @@ I am a passionate software developer with a keen interest in web development, ma
 
 <!-- CURRENT:START -->
 
+**[proximiPlay](https://github.com/YashikKhunt/proximiPlay)** · `Swift`  
+Local multiplayer party game for iPhone — SwiftUI + Multipeer Connectivity  
+<sub>last push 2026-09-03</sub>
+
 **[ewc-rulebook-rag](https://github.com/YashikKhunt/ewc-rulebook-rag)** · `Python`  
 Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybrid dense+BM25 retrieval, article-aware chunking, authority-based precedence, abstention as a success state. Built and audited via a builder/verifier/logger agent loop.  
 <sub>last push 2026-08-18</sub>
@@ -46,10 +50,6 @@ Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybr
 **[shorts-factory](https://github.com/YashikKhunt/shorts-factory)** · `Python`  
 _No description yet_  
 <sub>last push 2026-07-16</sub>
-
-**[context-doodle](https://github.com/YashikKhunt/context-doodle)** · `TypeScript`  
-_No description yet_  
-<sub>last push 2026-06-26</sub>
 
 <!-- CURRENT:END -->
 
