@@ -39,6 +39,10 @@ I am a passionate software developer with a keen interest in web development, ma
 
 <!-- CURRENT:START -->
 
+**[discord-coding-assistant](https://github.com/YashikKhunt/discord-coding-assistant)** · `TypeScript`  
+Self-hosted autonomous coding agent driven from Discord: /task, /bugreport, /runtest  
+<sub>last push 2026-09-12</sub>
+
 **[proximiPlay](https://github.com/YashikKhunt/proximiPlay)** · `Swift`  
 Local multiplayer party game for iPhone — SwiftUI + Multipeer Connectivity  
 <sub>last push 2026-09-09</sub>
@@ -46,10 +50,6 @@ Local multiplayer party game for iPhone — SwiftUI + Multipeer Connectivity
 **[ewc-rulebook-rag](https://github.com/YashikKhunt/ewc-rulebook-rag)** · `Python`  
 Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybrid dense+BM25 retrieval, article-aware chunking, authority-based precedence, abstention as a success state. Built and audited via a builder/verifier/logger agent loop.  
 <sub>last push 2026-08-18</sub>
-
-**[shorts-factory](https://github.com/YashikKhunt/shorts-factory)** · `Python`  
-_No description yet_  
-<sub>last push 2026-07-16</sub>
 
 <!-- CURRENT:END -->
 
