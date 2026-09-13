@@ -39,6 +39,10 @@ I am a passionate software developer with a keen interest in web development, ma
 
 <!-- CURRENT:START -->
 
+**[Driftwall](https://github.com/YashikKhunt/Driftwall)** · `Swift`  
+Live wallpapers for macOS. Six GPU-rendered scenes + your own videos. Free, offline, no account, no subscription.  
+<sub>last push 2026-09-13</sub>
+
 **[ewc-rulebook-rag](https://github.com/YashikKhunt/ewc-rulebook-rag)** · `Python`  
 Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybrid dense+BM25 retrieval, article-aware chunking, authority-based precedence, abstention as a success state. Built and audited via a builder/verifier/logger agent loop.  
 <sub>last push 2026-09-13</sub>
@@ -46,10 +50,6 @@ Compliance-grade RAG over the Esports World Cup 2026 competitive rulebooks. Hybr
 **[discord-coding-assistant](https://github.com/YashikKhunt/discord-coding-assistant)** · `TypeScript`  
 Self-hosted autonomous coding agent driven from Discord: /task, /bugreport, /runtest  
 <sub>last push 2026-09-13</sub>
-
-**[proximiPlay](https://github.com/YashikKhunt/proximiPlay)** · `Swift`  
-Local multiplayer party game for iPhone — SwiftUI + Multipeer Connectivity  
-<sub>last push 2026-09-09</sub>
 
 <!-- CURRENT:END -->
 
