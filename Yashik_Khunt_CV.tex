@@ -1,0 +1,150 @@
+\documentclass[a4paper,9pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.4in,bottom=0.4in,left=0.6in,right=0.6in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+% ---- Colors ----
+\definecolor{accent}{HTML}{1A5276}
+\definecolor{light}{HTML}{2E86C1}
+\definecolor{gray}{HTML}{555555}
+\definecolor{black}{HTML}{1A1A1A}
+
+\hypersetup{colorlinks=true, urlcolor=light}
+
+% ---- Spacing ----
+\setlength{\parindent}{0pt}
+\linespread{0.97}
+\pagestyle{empty}
+
+% ---- Section header with rule (rule sits BELOW the title) ----
+\titleformat{\section}
+{\color{accent}\bfseries\large}
+{}{0em}{\MakeUppercase}
+[\vspace{1pt}{\color{accent}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% ---- Custom commands ----
+\newcommand{\jobentry}[4]{%
+	\vspace{2pt}\noindent%
+	{\bfseries\color{black} #1} {\color{gray} $\cdot$ } {\bfseries\color{light} #2}%
+	\hfill {\itshape\color{gray} #4}\\[1pt]%
+	{\itshape\color{gray}\small #3}\par\vspace{1pt}%
+}
+
+\newcommand{\projentry}[3]{%
+	\vspace{2pt}\noindent%
+	{\bfseries\color{black} #1}\hfill{\itshape\color{gray} #2}\\[1pt]%
+	{\itshape\color{gray}\small #3}\par\vspace{1pt}%
+}
+
+\newcommand{\eduentry}[4]{%
+	\vspace{3pt}\noindent%
+	{\bfseries\color{black} #1}\hfill{\itshape\color{gray} #3}\\[1pt]%
+	{\color{light} #2}\quad{\itshape\color{gray}\small #4}\par%
+}
+
+\newcommand{\skillrow}[2]{%
+	\noindent{\bfseries\color{black} #1:}~~{\color{gray} #2}\par\vspace{1pt}%
+}
+
+\setlist[itemize]{leftmargin=1.4em, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+\renewcommand{\labelitemi}{\color{accent}\textendash}
+
+\begin{document}
+	
+	% ===== HEADER =====
+	{\fontsize{26}{30}\selectfont\bfseries\color{accent} Yashikkumar Khunt}\\[4pt]
+	{\color{gray}\normalsize M.Sc. Computer Science \ $\cdot$\ Full-Stack Developer \ $\cdot$\ AI/ML Enthusiast}\\[5pt]
+	{\small\color{gray}%
+		Paderborn, Germany \enspace$\cdot$\enspace
+		\href{mailto:yashikkhunt2002@gmail.com}{yashikkhunt2002@gmail.com} \enspace$\cdot$\enspace
+		+49 176 46541206 \enspace$\cdot$\enspace
+		\href{https://linkedin.com/in/YashikKhunt}{linkedin.com/in/YashikKhunt} \enspace$\cdot$\enspace
+		\href{https://github.com/YashikKhunt}{github.com/YashikKhunt}%
+	}\\[3pt]
+	{\color{accent}\titlerule[1.5pt]}
+	
+	% ===== SUMMARY =====
+	\section{Professional Summary}
+	\justifying
+	Master's student in Computer Science at Universit\"at Paderborn with 2+ years of industry experience as a full-stack Werkstudent. Hands-on background in LLM agents, RAG systems, data pipeline engineering, blockchain, and cloud infrastructure, focused on production-grade tools.
+	\RaggedRight
+	
+	% ===== EXPERIENCE =====
+	\section{Experience}
+	
+	\jobentry{Werkstudent -- Full-Stack Developer}{Safety Innovation Center GmbH}{Node-RED $\cdot$ Angular $\cdot$ Python $\cdot$ LlamaIndex $\cdot$ Meilisearch $\cdot$ Docker}{May 2024 -- Present}
+	\begin{itemize}
+		\item Built and maintained $\sim$70 data adapter subflows in Node-RED scraping national security research funding portals across Germany, France (ANR ODS API), Spain (CETSE), Netherlands (NWO NWOpen-API), and Austria.
+		\item Designed a standardized adapter documentation format (IN/OUT/Notes conventions) adopted across the adapter library.
+		\item Developed an LLM decision-support agent with LlamaIndex tool-calling over Ollama and Meilisearch (BM25) retrieval.
+		\item Integrated Angular front-ends with back-end services for smart city dashboards; automated adapter status audits.
+	\end{itemize}
+	
+	\jobentry{DApp Developer}{DOT3 Solutions}{Solidity $\cdot$ React.js $\cdot$ OpenZeppelin $\cdot$ ERC Standards $\cdot$ Web3.js}{Dec 2022 -- Jul 2023}
+	\begin{itemize}
+		\item Developed ERC-standard smart contracts with OpenZeppelin and a React.js NFT airdrop platform solving initial token distribution, letting visitors mint and list tokens for sale.
+		\item Implemented and deployed an Ethereum-based e-voting system with Aadhar card API authentication and live results.
+	\end{itemize}
+	
+	\jobentry{Cloud Infrastructure Intern}{Celebal Technologies}{AWS/Azure $\cdot$ IAM $\cdot$ CI/CD $\cdot$ Firewall $\cdot$ VPN}{Jun 2022 -- Aug 2022}
+	\begin{itemize}
+		\item Managed IAM policies, firewall rules, and VPN servers, and designed CI/CD pipeline concepts to strengthen cloud security.
+	\end{itemize}
+	
+	\jobentry{Flutter Developer Intern}{Infikey Technologies}{Flutter $\cdot$ Dart $\cdot$ Mobile Security}{Jun 2021 -- Aug 2021}
+	\begin{itemize}
+		\item Maintained a live production Flutter mobile application and implemented basic application security measures.
+	\end{itemize}
+	
+	% ===== EDUCATION =====
+	\section{Education}
+	\eduentry{M.Sc. Computer Science}{Universit\"at Paderborn, Germany}{2023 -- Present}{Grade: 3.1 (German scale)}
+	\eduentry{B.Tech. Computer Engineering}{Charotar University of Science and Technology, India}{2019 -- 2023}{CGPA: 9.52 / 10 (equivalent ECTS: 1.2)}
+	
+	% ===== PROJECTS =====
+	\section{Personal \& Academic Projects}
+	
+	\projentry{\href{https://github.com/YashikKhunt/discord-coding-assistant}{\color{black}AutoCode -- Autonomous Coding Agent}}{2026}{TypeScript $\cdot$ Fastify $\cdot$ React $\cdot$ PostgreSQL $\cdot$ Docker $\cdot$ Vercel AI SDK $\cdot$ Anthropic/OpenAI}
+	\begin{itemize}
+		\item Engineered a self-hosted coding agent driven from Discord (\texttt{/task}, \texttt{/bugreport}, \texttt{/runtest}) that ships fixes as PRs.
+		\item Architected a pnpm TypeScript monorepo (discord.js bot, Fastify API, job worker, React dashboard) on a PostgreSQL job queue with \texttt{SKIP LOCKED} claiming, heartbeats, and an event outbox; deployed 24/7 on Oracle Cloud.
+		\item Built a multi-provider LLM loop in hardened Docker sandboxes with patch guardrails, USD budgets, and cost tracing.
+	\end{itemize}
+	
+	\projentry{\href{https://github.com/YashikKhunt/ewc-rulebook-rag}{\color{black}EWC Rulebook RAG -- Compliance-Grade Retrieval}}{2026}{Python $\cdot$ LangGraph $\cdot$ LangChain $\cdot$ ChromaDB $\cdot$ BM25 $\cdot$ React $\cdot$ Redux}
+	\begin{itemize}
+		\item Built a RAG system over 25 Esports World Cup rulebooks (734 pages, 2{,}382 article-aware chunks) with hybrid retrieval.
+		\item Designed a LangGraph pipeline (route $\rightarrow$ retrieve $\rightarrow$ resolve $\rightarrow$ answer) with rule precedence, article citations, and abstention.
+	\end{itemize}
+	
+	\projentry{\href{https://github.com/YashikKhunt/Driftwall}{\color{black}Driftwall -- macOS Live Wallpapers}}{2026}{Swift $\cdot$ SwiftUI $\cdot$ AppKit $\cdot$ Metal $\cdot$ AVFoundation}
+	\begin{itemize}
+		\item Developed a dependency-free macOS menu-bar app with 16 GPU-rendered Metal shader scenes and power-aware pausing.
+	\end{itemize}
+	
+	\projentry{SecAI -- AI-Assisted Secure Software Development Platform}{2024}{Java $\cdot$ SonarQube $\cdot$ CryptoAnalysis $\cdot$ LLMs $\cdot$ SAST $\cdot$ REST APIs}
+	\begin{itemize}
+		\item Co-designed a SonarQube-based SAST platform using CryptoAnalysis and LLMs to explain Java crypto misuses.
+	\end{itemize}
+	
+	% ===== SKILLS =====
+	\section{Technical Skills}
+	\skillrow{Languages}{Python, JavaScript/TypeScript, Swift, Solidity, C/C++, SQL, HTML/CSS}
+	\skillrow{Frameworks}{React.js, Angular, Node.js, Fastify, Redux, Flutter, SwiftUI, Metal, Node-RED, GraphQL}
+	\skillrow{AI / LLM}{LangGraph, LangChain, LlamaIndex, Vercel AI SDK, Anthropic/OpenAI APIs, Ollama, HuggingFace}
+	\skillrow{Retrieval \& Data}{Hybrid RAG (dense + BM25, RRF), ChromaDB, Qdrant, Meilisearch, PostgreSQL, Drizzle ORM}
+	\skillrow{Blockchain}{Solidity, ERC standards, OpenZeppelin, Web3.js, Ganache, Truffle, Metamask}
+	\skillrow{DevOps \& Tools}{Docker, Kubernetes, GitHub Actions, Oracle Cloud, AWS/Azure IAM, Vitest, pytest, SonarQube, Linux}
+	\skillrow{Languages (Human)}{English (C1), German (A2), Gujarati (native), Hindi (fluent)}
+	
+\end{document}
