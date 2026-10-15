@@ -39,6 +39,10 @@ I am a passionate software developer with a keen interest in web development, ma
 
 <!-- CURRENT:START -->
 
+**[DynamicCat](https://github.com/YashikKhunt/DynamicCat)** · `Swift`  
+_No description yet_  
+<sub>last push 2026-10-14</sub>
+
 **[pypi-dependency-checker](https://github.com/YashikKhunt/pypi-dependency-checker)** · `Python`  
 Check pinned requirements against the PyPI JSON API  
 <sub>last push 2026-10-12</sub>
@@ -46,10 +50,6 @@ Check pinned requirements against the PyPI JSON API
 **[Driftwall](https://github.com/YashikKhunt/Driftwall)** · `Swift`  
 Live wallpapers for macOS. Six GPU-rendered scenes + your own videos. Free, offline, no account, no subscription.  
 <sub>last push 2026-09-17</sub>
-
-**[discord-coding-assistant](https://github.com/YashikKhunt/discord-coding-assistant)** · `TypeScript`  
-Self-hosted autonomous coding agent driven from Discord: /task, /bugreport, /runtest  
-<sub>last push 2026-09-14</sub>
 
 <!-- CURRENT:END -->
 
