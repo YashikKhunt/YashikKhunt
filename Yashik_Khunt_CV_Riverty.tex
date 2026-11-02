@@ -1,0 +1,136 @@
+\documentclass[a4paper,9pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.32in,bottom=0.3in,left=0.6in,right=0.6in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+% ---- Colors ----
+\definecolor{accent}{HTML}{1A5276}
+\definecolor{light}{HTML}{2E86C1}
+\definecolor{gray}{HTML}{555555}
+\definecolor{black}{HTML}{1A1A1A}
+
+\hypersetup{colorlinks=true, urlcolor=light}
+
+% ---- Spacing ----
+\setlength{\parindent}{0pt}
+\linespread{0.97}
+\pagestyle{empty}
+
+% ---- Section header with rule (rule sits BELOW the title) ----
+\titleformat{\section}
+{\color{accent}\bfseries\large}
+{}{0em}{\MakeUppercase}
+[\vspace{1pt}{\color{accent}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{5pt}{3pt}
+
+% ---- Custom commands ----
+\newcommand{\jobentry}[4]{%
+	\vspace{2pt}\noindent%
+	{\bfseries\color{black} #1} {\color{gray} $\cdot$ } {\bfseries\color{light} #2}%
+	\hfill {\itshape\color{gray} #4}\\[1pt]%
+	{\itshape\color{gray}\small #3}\par\vspace{1pt}%
+}
+
+\newcommand{\projentry}[3]{%
+	\vspace{2pt}\noindent%
+	{\bfseries\color{black} #1}\hfill{\itshape\color{gray} #2}\\[1pt]%
+	{\itshape\color{gray}\small #3}\par\vspace{1pt}%
+}
+
+\newcommand{\eduentry}[4]{%
+	\vspace{3pt}\noindent%
+	{\bfseries\color{black} #1}\hfill{\itshape\color{gray} #3}\\[1pt]%
+	{\color{light} #2}\quad{\itshape\color{gray}\small #4}\par%
+}
+
+\newcommand{\skillrow}[2]{%
+	\noindent{\bfseries\color{black} #1:}~~{\color{gray} #2}\par\vspace{1pt}%
+}
+
+\setlist[itemize]{leftmargin=1.4em, itemsep=0.5pt, topsep=1pt, parsep=0pt}
+\renewcommand{\labelitemi}{\color{accent}\textendash}
+
+\begin{document}
+
+	% ===== HEADER =====
+	{\fontsize{26}{30}\selectfont\bfseries\color{accent} Yashikkumar Khunt}\\[4pt]
+	{\color{gray}\normalsize Software Developer \ $\cdot$\ RAG, Context Engineering \& Agentic LLM Systems}\\[5pt]
+	{\small\color{gray}%
+		Paderborn, Germany \enspace$\cdot$\enspace
+		\href{mailto:yashikkhunt2002@gmail.com}{yashikkhunt2002@gmail.com} \enspace$\cdot$\enspace
+		+49 176 46541206 \enspace$\cdot$\enspace
+		\href{https://linkedin.com/in/YashikKhunt}{linkedin.com/in/YashikKhunt} \enspace$\cdot$\enspace
+		\href{https://github.com/YashikKhunt}{github.com/YashikKhunt}%
+	}\\[3pt]
+	{\color{accent}\titlerule[1.5pt]}
+
+	% ===== SUMMARY =====
+	\section{Professional Summary}
+	\justifying
+	Software developer and M.Sc. Computer Science candidate (Universit\"at Paderborn) building RAG pipelines, typed context graphs and agentic multi-step LLM workflows. 2+ years as a full-stack Werkstudent shipping LLM agents, hybrid retrieval and data pipelines in Python and TypeScript; Master's thesis on conflict-aware context fusion for conversational decision support with an industry partner. Focused on context engineering, retrieval evaluation and turning AI into reliable, cost-aware product features.
+	\RaggedRight
+
+	% ===== EXPERIENCE =====
+	\section{Experience}
+
+	\jobentry{Master's Thesis -- Context-Aware RAG \& Agents}{Industry Partner (confidential)}{Python $\cdot$ RAG $\cdot$ Context Graph $\cdot$ Ollama $\cdot$ Meilisearch $\cdot$ Vector DB $\cdot$ Docker $\cdot$ RAGAS}{2026 -- Present}
+	\begin{itemize}
+		\item Designing a \textbf{typed multi-source context graph} on the partner's emergency-response data \& AI platform, fusing user/session context, live operational data (weather, location, incident type, vehicle positions) and static corpora (SOPs, regulations) with provenance and reliability per fragment.
+		\item Building a context-fusion RAG backend with \textbf{dynamic query routing} across vector, keyword and live-state stores, \textbf{priority $\times$ freshness $\times$ relevance ranking} via time-decay validity, and explicit conflict handling (prioritize, defer or abstain) injected into the prompt context.
+		\item Building the evaluation harness: curated benchmark of 150--250 normal, stale-data and conflict queries; LLM-as-judge grounding, source attribution, abstention correctness, latency and token cost; ablations vs.\ flat-RAG baselines.
+	\end{itemize}
+
+	\jobentry{Werkstudent -- Full-Stack Developer}{Safety Innovation Center GmbH}{Python $\cdot$ TypeScript $\cdot$ LlamaIndex $\cdot$ Ollama $\cdot$ Meilisearch $\cdot$ Node-RED $\cdot$ Angular $\cdot$ Docker}{May 2024 -- Present}
+	\begin{itemize}
+		\item Developed an LLM decision-support agent with LlamaIndex tool-calling over Ollama-hosted models and Meilisearch (BM25) retrieval, the base for the platform's AI features.
+		\item Built and maintained $\sim$70 Node-RED data adapters ingesting and indexing security research funding portals across DE, FR, ES, NL and AT (incl. ANR ODS and NWOpen APIs).
+		\item Standardized adapter documentation and status audits; built Angular smart city dashboards.
+	\end{itemize}
+
+	\jobentry{DApp Developer}{DOT3 Solutions}{Solidity $\cdot$ React.js $\cdot$ OpenZeppelin $\cdot$ ERC Standards $\cdot$ Web3.js}{Dec 2022 -- Jul 2023}
+	\begin{itemize}
+		\item Developed ERC-standard smart contracts and a React.js NFT airdrop platform; deployed an Ethereum e-voting system with Aadhar API authentication.
+	\end{itemize}
+
+	\vspace{2pt}\noindent{\bfseries\color{black} Earlier internships:}~{\color{gray} Cloud Infrastructure Intern, \textcolor{light}{Celebal Technologies} (2022) -- AWS/Azure IAM, firewall \& VPN, CI/CD concepts $\cdot$ Flutter Developer Intern, \textcolor{light}{Infikey Technologies} (2021) -- production Flutter app}\par
+
+	% ===== PROJECTS =====
+	\section{Selected Projects}
+
+	\projentry{\href{https://github.com/YashikKhunt/ewc-rulebook-rag}{\color{black}EWC Rulebook RAG -- Compliance-Grade Retrieval}}{2026}{Python $\cdot$ LangGraph $\cdot$ LangChain $\cdot$ ChromaDB $\cdot$ BM25 $\cdot$ React $\cdot$ Redux}
+	\begin{itemize}
+		\item RAG over 25 rulebooks (734 pages) with article-aware chunking (2{,}382 chunks), hybrid dense + BM25 retrieval, and a multi-step LangGraph pipeline (route $\rightarrow$ retrieve $\rightarrow$ resolve $\rightarrow$ answer) with rule precedence, article-level citations and abstention when evidence is missing.
+	\end{itemize}
+
+	\projentry{\href{https://github.com/YashikKhunt/discord-coding-assistant}{\color{black}AutoCode -- Autonomous Coding Agent}}{2026}{TypeScript $\cdot$ Fastify $\cdot$ React $\cdot$ PostgreSQL $\cdot$ Docker $\cdot$ Vercel AI SDK $\cdot$ Anthropic/OpenAI}
+	\begin{itemize}
+		\item Self-hosted agentic developer tool driven from Discord that plans, edits code and ships fixes as PRs, using a multi-provider LLM tool-calling loop in hardened Docker sandboxes with guardrails, USD budgets and cost tracing.
+		\item TypeScript monorepo (Fastify API, worker, React dashboard) on a PostgreSQL job queue, running 24/7 on Oracle Cloud.
+	\end{itemize}
+
+	\projentry{SecAI -- LLM-Assisted Secure Software Development}{2024}{Java $\cdot$ SonarQube $\cdot$ CryptoAnalysis $\cdot$ LLMs -- SAST platform explaining Java crypto misuses to developers}
+
+	% ===== SKILLS =====
+	\section{Technical Skills}
+	\skillrow{RAG \& Retrieval}{Hybrid retrieval (dense + BM25, RRF), embeddings, chunking strategies, indexing pipelines, query routing, reranking, RAG evaluation (LLM-as-judge, RAGAS-style metrics, ablations)}
+	\skillrow{Agents \& Context}{LangGraph, LangChain, LlamaIndex, Vercel AI SDK, tool-calling / ReAct agents, multi-step orchestration, context graphs, prompt \& context engineering, guardrails, cost tracking}
+	\skillrow{LLMs \& Data Stores}{Anthropic/OpenAI APIs, Ollama, HuggingFace; ChromaDB, Qdrant, Meilisearch, PostgreSQL}
+	\skillrow{Languages \& Frameworks}{Python, TypeScript/JavaScript, Java, SQL, Swift, Solidity; Fastify, Node.js, React, Angular, Node-RED, GraphQL}
+	\skillrow{DevOps \& Tools}{Docker, Kubernetes, GitHub Actions, Oracle Cloud, AWS/Azure IAM, pytest, Vitest, SonarQube, Linux}
+	\skillrow{Languages (Human)}{English (C1), German (A2, currently learning), Gujarati (native), Hindi (fluent)}
+
+	% ===== EDUCATION =====
+	\section{Education}
+	\eduentry{M.Sc. Computer Science}{Universit\"at Paderborn, Germany}{2023 -- Present}{Thesis: Conflict-Aware Multi-Source Context Fusion for Conversational Decision Support}
+	\eduentry{B.Tech. Computer Engineering}{Charotar University of Science and Technology, India}{2019 -- 2023}{CGPA: 9.52 / 10 (equivalent ECTS: 1.2)}
+
+\end{document}
